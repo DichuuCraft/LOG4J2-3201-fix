@@ -11,7 +11,7 @@ import net.minecraft.server.MinecraftServer;
 
 @Mixin(MinecraftServer.class)
 public class MixinMinecraftServer {
-    @Inject(method = "run", at = @At(
+    @Inject(method = "runServer", at = @At(
         value = "INVOKE_ASSIGN",
         target = "Lnet/minecraft/server/MinecraftServer;setupServer()Z"
     ))

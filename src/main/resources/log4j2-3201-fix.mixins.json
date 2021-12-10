@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hadroncfy.log4j2_3201_fix.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinMinecraftServer"
+  ],
+  "client": [
+    "MixinMain"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "log4j2-3201-fix-refmap.json"
+}

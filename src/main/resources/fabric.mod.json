@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "log4j2-3201-fix",
+  "version": "${version}",
+
+  "name": "LOG4j2-3201-fix",
+  "description": "Fix JNDI exploit of LOG4j2",
+  "authors": [
+    "hadroncfy"
+  ],
+  "contact": {
+    "homepage": "https://github.com/DichuuCraft/",
+    "sources": "https://github.com/DichuuCraft/",
+    "issues": "https://github.com/DichuuCraft/"
+  },
+
+  "license": "MIT",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ]
+  },
+  "mixins": [
+    "log4j2-3201-fix.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.14.*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
